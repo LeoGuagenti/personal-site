@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+
+h2, h5{
+    color: white;
+}
+
+h5{
+    padding-top: 1vh;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* HEADER */
+.app-bar-container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.app-bar-left{
+    width: 100%;
+}
+
+.app-bar-right{
+    justify-content: flex-end;
+}
+
+.app-bar-icon{
+    color: white;
+}
+
+.app-bar-icon:hover, .header-text:hover{
+    color: #E31B6D
+}
+
+.header-text{
+    color: white;
+    transition: .2s;
+}
+
+/* HOME PAGE */
+.home-page{
+    margin: 0;
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+}
+
+.home-page-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home-page-background{
+    width: 100%;
+    height: 100vh;
+    background-image: url("../Media/homebackground.jpg");
+    background-position: fill;
+    position: absolute;
+}
+
+.home-page-content-container{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ABOUT PAGE */
+.about-page-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* GENERAL COMPONENTS */
+.background{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: url("../Media/one.jpg");
+    background-position: fill;
+    background-size: cover;
+}
+
+.background-overlay{
+    width: 100%;
+    height: 100vh;
+    background: #232323;
+    opacity: 50%;
+    position: absolute;
+}
+
+.content-panel{
+    background-color: #3f3f3f;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-card{
+    width: 15vw;
+    height: 15vw;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content-card:hover{
+    background-color: #2f2f2f;
+}
+
+.header-padding{
+    height: 10vh;
+    width: 100%;
+}
