@@ -5,44 +5,52 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="main.css" rel="stylesheet">
         <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-        <title>Static Site</title>
+        <title>Leo Guagenti ~ Web Developer</title>
     </head>
     <body>
-        <section class="site-header">
+        <section class="site-header" id="home">
             <nav>
                 <div class="logo">
                     <h1>Leo Guagenti</h1>
                 </div>
-                <div class="menu">
+                <div class="menu" id="menu">
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Contact</li>
+                        <li id="m1">Home</li>
+                        <li id="m2">About</li>
+                        <li id="m3">Projects</li>
+                        <li id="m4">Contact</li>
                     </ul>
                 </div>
+                <div class="mobile-menu" id="m5">☰</div>
             </nav>
+            <div class="mobile-menu-links" id="mobile-menu-links">
+                <a id="m10">Home</a>
+                <a id="m11">About</a>
+                <a id="m12">Projects</a>
+                <a id="m13">Contact</a>
+            </div>
             <section>
                 <div class="left-side">
                     <img src="./media/home-graphic.svg">
                 </div>
                 <div class="right-side">
                     <h1>Leo Guagenti</h1>
-                    <span>I am currently attending Ohio University for my undergraduate degree in Computer Science. I have a passion for all things <span class="secondary">web development</span> and strive to learn something new everyday!</span>
+                    <span>I have a passion for all things <span class="secondary-color">web development</span> and strive to learn something new everyday!</span>
                     <div>
-                        <button>Projects</button>
-                        <button>Contact Me!</button>
+                        <button id="b1">Projects</button>
+                        <button id="b2">Contact Me!</button>
                     </div>
                 </div>
             </section>
         </section>
 
-        <section class="site-about">
+        <section class="site-about" id="about">
             <div class="left-side">
                 <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur optio perferendis placeat culpa non ex pariatur sunt eaque dolorum fuga! Voluptatibus sunt totam odit voluptatum eaque assumenda modi ullam repudiandae?</p>
+                <span>I am a 3rd-year Computer Science student and an aspiring web developer with a focus on responsive design and UX. In my free time I love trying out new things I've learned and find satisfaction in applying new knowledge.</span>
+                <span>I am currently working on improving my skills with React, UI/UX, and asyncronous JavaScript.</span>
                 <div>
-                    <button>Help me be less gay</button>
+                    <button id="b3">Contact Me!</button>
                 </div>
             </div>
             <div class="right-side">
@@ -50,7 +58,75 @@
             </div>
         </section>
 
-        <section class="site-portfolio">
+        <section class="site-portfolio" id="portfolio">
+            <div class="left-side">
+                <img src="./media/portfolio-graphic.svg">
+            </div>
+            <div class="right-side">
+                <h1>Projects</h1>
+                <span>I love making useful tools and interesting simulations. Each project helped me learn something new!</span>
+                <div>
+                    <button class="project-button" id="l1">
+                        <p>URL Sortener</p>
+                        <span>A lightweight url shortener made using NodeJs, Express, and MongoDB</span>
+                    </button>
+
+                    <button class="project-button" id="l2">
+                        <p>Web Crawler</p>
+                        <span>A webcrawler to collect images from the website 4chan</span>
+                    </button>
+
+                    <button class="project-button" id="l3">
+                        <p>Evolution Simulation</p>
+                        <span>A graphical simulation that models mutating genes in organisms</span>
+                    </button>
+                </div>
+                <br>
+                <button id="l4">See More &RightArrow;</button>
+            </div>
         </section>
+
+        <section class="site-contact" id="contact">
+            <div class="left-side">
+                <h1>Contact</h1>
+                <span>I enjoy contributing to online communities, and I am active all over the place! You can reach out to me at any of the following places:</span>
+                <div>
+                    <button id="l5">
+                        <img src="./media/icons/github.svg">
+                    </button>
+                    <button id="l6">
+                        <img src="./media/icons/stack-overflow.svg">
+                    </button>
+                    <button id="l7">
+                        <img src="./media/icons/linkedin.svg">
+                    </button>
+                    <button id="l8">
+                        <img src="./media/icons/mail.svg">
+                    </button>
+                </div>
+            </div>
+            <div class="right-side">
+                <img src="./media/contact-graphic.svg">
+            </div>
+        </section>
+
+        <footer>
+            <div class="left-side">
+                <nav>
+                    <ul>
+                        <li id="m6">Home</li>
+                        <li id="m7">About</li>
+                        <li id="m8">Projects</li>
+                        <li id="m9">Contact</li>
+                        <br>
+                        <button id="b4">BACK TO TOP</button>
+                    </ul>
+                </nav>
+            </div>
+            <div class="right-side">
+                © 2020 | Leo Guagenti | All rights reserved
+            </div>
+        </footer>
+        <script src="script.js"></script>
     </body>
 </html>

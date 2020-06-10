@@ -3,16 +3,59 @@ body{
     padding: 0;
     font-size: 62.5%;
     font-family: Montserrat;
+    overflow-x: hidden;
 }
 
-.site-header{
-    width: 100%;
-    height: 575px;
-    background-color: #445B69;
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3vw));
-    margin-bottom: -5vw;
+button{
+    border: none;
+    background-color: #28363F;
+    font-size: 1.2rem;
+    color: white;
+    outline: none;
+    padding: 10px 20px 10px 20px;
+    margin-right: 10px;
+    border-radius: 3px;
+    transition: 0.125s;
 }
 
+button:hover{
+    cursor: pointer;
+    background-color: #DC735C
+}
+
+h1{
+    font-size: 2.2rem;
+    margin: 0;
+    color: white;
+}
+
+p{
+    font-size: 1.2rem;
+    margin: 0;
+    color: white;
+}
+
+span{
+    font-size: 1.2rem;
+    display: inline;
+    padding: 10px 0px 20px 0px;
+}
+
+img{
+    width: 40vw;
+    padding: 50px;
+}
+
+.secondary-color{
+    font-size: 1.2rem;
+    color: #F58066;
+}
+
+.mobile-menu-links{
+    display: none;
+}
+
+/* ANIMATIONS(s) */
 @keyframes fade-in{
     0%{
         transform: rotate(0);
@@ -24,7 +67,15 @@ body{
     }
 }
 
-nav{
+/* HEADER */
+.site-header{
+    width: 100%;
+    height: 575px;
+    background-color: #445B69;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3vh));
+}
+
+.site-header nav{
     width: 100%;
     height: 75px;
     display: flex;
@@ -35,12 +86,14 @@ nav{
 
 .logo{
     width: 50%;
-    height: 75px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: left;
+    padding-left: 45px;
 }
 
 .logo h1{
-    height: 100px;
-    padding-left: 50px;
     width: 50%;
     font-size: 1.4rem;
 }
@@ -76,11 +129,19 @@ nav{
     color: #F58066;
 }
 
+.mobile-menu{
+    display: none;
+    width: 50%;
+    height: 75px;
+    padding-right: 100px;
+}
+
 .site-header section{
     display: flex;
 }
 
-.site-header section .right-side, .site-header section .left-side{
+.site-header section .right-side, 
+.site-header section .left-side{
     height: 450px;
 }
 
@@ -90,12 +151,8 @@ nav{
     justify-content: center;
 }
 
-.site-header section .left-side img{
-    width: 40vw;
-    padding: 50px;
-}
-
-.site-header section .left-side, .site-header section .right-side{
+.site-header section .left-side, 
+.site-header section .right-side{
     opacity: 0;
     animation: fade-in .5s forwards .3s ease;
 }
@@ -109,56 +166,22 @@ nav{
     margin-left: 10px;
 }
 
-.site-header section .right-side h1{
-    font-size: 2.2rem;
-    margin: 0;
-}
-
-.site-header section .right-side span{
-    font-size: 1.2rem;
-    display: inline;
-    padding: 10px 0px 20px 0px;
-}
-
-.site-header section .right-side button{
-    border: 2px solid #F58066;
-    background-color: transparent;
-    font-size: 1.2rem;
-    color: white;
-    outline: none;
-    padding: 10px 20px 10px 20px;
-    margin-right: 10px;
-    border-radius: 3px;
-    transition: 0.125s;
-}
-
-.site-header section .right-side button:hover{
-    cursor: pointer;
-    border: 2px solid #DD735C;
-    background-color: #DD735C
-
-}
-
-.secondary{
-    font-size: 1rem;
-    color: #F58066;
-}
-
 /*ABOUT*/
 .site-about{
-    padding-top: 75px;
     width: 100%;
-    height: 550px;
+    height: auto;
     display: flex;
+    background-color: white;
 }
 
-.site-about .left-side, .site-about .right-side{
+.site-about .left-side, 
+.site-about .right-side{
     opacity: 0;
     animation: fade-in .5s forwards .3s ease;
 }
 
 .site-about .left-side{
-    padding: 50px 0px 0px 70px;
+    padding: 20px 0px 0px 70px;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -166,13 +189,12 @@ nav{
 }
 
 .site-about .left-side h1{
-    font-size: 2.2rem;
     color: #3F3D56;
-    margin: 0;
 }
 
 .site-about .left-side p{
-    font-size: 1.2rem;
+    color: #3F3D56;
+    padding: 5px 0px 10px 0px;
 }
 
 .site-about .right-side{
@@ -181,18 +203,256 @@ nav{
     justify-content: center;
 }
 
-.site-about .right-side img{
-    width: 40vw;
-    padding: 50px;
-}
-
 /*PORTFOLIO*/
 .site-portfolio{
-    padding-top: 75px;
     width: 100%;
-    height: 550px;
+    padding: 100px 0px 140px 0px;
+    height: auto;
     display: flex;
     background-color: #445B69;
-    
-    clip-path: polygon(0 calc(0% + 3vh), 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 3%, 100% 0, 100% calc(100% - 3vh), 0 100%);
+}
+
+.site-portfolio .left-side{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.site-portfolio .right-side{
+    width: 40%;
+    padding: 100px 20px 0px 30px;
+}
+
+.site-portfolio .right-side span{
+    color: white;
+}
+
+.site-portfolio .right-side div{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-button{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid white;
+    text-align: left;
+    padding: 25px 10px 25px 20px;
+    color: white;
+    outline: none;
+    margin: 20px 0px 0px 0px;
+}
+
+.project-button span{
+    color: #cdcdcd;
+    font-size: 1.1rem;
+}
+
+.project-button:hover{
+    background-color: #28363F;
+}
+
+/* SITE CONTACT */
+.site-contact{
+    width: 100%;
+    height: auto;
+    padding-bottom: 50px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.site-contact .left-side{
+    width: 45%;
+    padding: 100px 20px 0px 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.site-contact .left-side h1, 
+.site-contact .left-side span{
+    color: black;
+}
+
+.site-contact .right-side{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+
+.site-contact .left-side div button{
+    margin: 0px 10px 10px 0px;
+}
+
+.site-contact .left-side div button img{
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+}
+
+/* FOOTER */
+footer{
+    height: 275px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #28363F;
+}
+
+footer .left-side, 
+footer .right-side{
+    color: white;
+    padding: 30px 30px 10px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+footer .left-side ul button{
+    background-color: #F58066;
+    width: 100%;
+    margin: 0;
+}
+
+footer .left-side ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 0;
+}
+
+footer .left-side ul li{
+    list-style: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: 0.125s;
+}
+
+footer .left-side ul li:hover{
+    cursor: pointer;
+    color: #F58066;
+}
+
+.mobile-menu-links{
+    display: none;
+} 
+
+@media only screen and (max-width: 728px){
+    /*MOBILE HEADER*/
+    .site-header{
+        height: auto;
+    }
+    .site-header section{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        padding: 50px 0px 0px 0px;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    .site-header section .right-side{
+        width: 80vw;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .site-header section .left-side{
+        padding: 0;
+        margin: 0;
+        height: auto;
+        width: 80vw;
+    }
+    .menu{
+        display: none;
+    }
+    .mobile-menu{
+        text-align: right;
+        line-height: 80px;
+        padding-right: 100px;
+        font-size: 2.2rem;
+        display: inline;
+    }
+    .mobile-menu:hover{
+        cursor: pointer;
+    }
+    .mobile-menu-links{
+        width: 100%;
+        background-color: #28363F;
+        position: absolute;
+        z-index: 100;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mobile-menu-links a{
+        padding: 5px;
+        font-size: 1.2rem;
+        color: white;
+    }
+    .mobile-menu-links a:hover{
+        color: #F58066;
+        cursor: pointer;
+    }
+
+    .site-header section .left-side img{
+        padding: 0px 0px 100px 0px;
+        width: 100%;
+    }
+
+    /*MOBILE ABOUT*/
+    .site-about{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .site-about .left-side{
+        width: 80vw;
+        padding: 70px 0px 0px 0px;
+    }
+    .site-about .right-side{
+        width: 80vw;
+    }
+    .site-about .right-side img{
+        padding: 50px 0px 100px 0px;
+        width: 100%;
+    }
+
+    .site-portfolio{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+    .site-portfolio .right-side,
+    .site-portfolio .left-side{
+        width: 80vw;
+    }
+    .site-portfolio .left-side img{
+        padding: 50px 0px 50px 0px;
+        width: 100%;
+    }
+
+    .site-contact{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+    }
+    .site-contact .left-side, .site-contact .right-side{
+        width: 80vw;
+    }
+    .site-contact .right-side img{
+        padding: 50px 0px 100px 0px;
+        width: 90%;
+    }
 }
