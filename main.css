@@ -1,10 +1,16 @@
-@import url(//fonts.googleapis.com/css?family=Montserrat);
+@import url(//fonts.googleapis.com/css2?family=Montserrat);
+@font-face {
+    font-family: roboto;
+    src: url(".media/fonts/Roboto.ttf") format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
 
 body{
     margin: 0;
     padding: 0;
     font-size: 62.5%;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat';
     overflow-x: hidden;
 }
 
@@ -135,7 +141,11 @@ img{
     display: none;
     width: 50%;
     height: 75px;
-    padding-right: 100px;
+}
+
+.mobile-menu img{
+    width: 40px;
+    padding: 0px;
 }
 
 .site-header section{
@@ -208,7 +218,7 @@ img{
 /*PORTFOLIO*/
 .site-portfolio{
     width: 100%;
-    padding: 100px 0px 140px 0px;
+    padding: 30px 0px 90px 0px;
     height: auto;
     display: flex;
     background-color: #445B69;
@@ -259,7 +269,7 @@ img{
 .site-contact{
     width: 100%;
     height: auto;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     background-color: white;
     display: flex;
     justify-content: center;
@@ -359,6 +369,8 @@ footer .left-side ul li:hover{
     }
     .site-header section .right-side{
         width: 80vw;
+        height: auto;
+        padding: 120px 0px 50px 0px;
         text-align: center;
         display: flex;
         align-items: center;
@@ -378,7 +390,9 @@ footer .left-side ul li:hover{
         line-height: 80px;
         padding-right: 100px;
         font-size: 2.2rem;
-        display: inline;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center
     }
     .mobile-menu:hover{
         cursor: pointer;
@@ -394,8 +408,8 @@ footer .left-side ul li:hover{
         align-items: center;
     }
     .mobile-menu-links a{
-        padding: 5px;
-        font-size: 1.2rem;
+        padding: 8px;
+        font-size: 1.4rem;
         color: white;
     }
     .mobile-menu-links a:hover{
