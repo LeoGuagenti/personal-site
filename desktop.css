@@ -78,7 +78,7 @@ img{
 /* HEADER */
 .site-header{
     width: 100%;
-    height: 575px;
+    height: 600px;
     background-color: #445B69;
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 3vh));
 }
@@ -155,6 +155,7 @@ img{
 .site-header section .right-side, 
 .site-header section .left-side{
     height: 450px;
+    padding: 25px 0px 25px 0px;
 }
 
 .site-header section .left-side{
@@ -190,10 +191,11 @@ img{
 .site-about .right-side{
     opacity: 0;
     animation: fade-in .5s forwards .3s ease;
+    padding: 50px 0px 50px 0px;
 }
 
 .site-about .left-side{
-    padding: 20px 0px 0px 70px;
+    padding-left: 70px;
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -218,7 +220,7 @@ img{
 /*PORTFOLIO*/
 .site-portfolio{
     width: 100%;
-    padding: 30px 0px 90px 0px;
+    padding: 90px 0px 90px 0px;
     height: auto;
     display: flex;
     background-color: #445B69;
@@ -233,7 +235,7 @@ img{
 
 .site-portfolio .right-side{
     width: 40%;
-    padding: 100px 20px 0px 30px;
+    padding: 80px 20px 0px 30px;
 }
 
 .site-portfolio .right-side span{
@@ -248,7 +250,8 @@ img{
 .project-button{
     width: 100%;
     background-color: transparent;
-    border: 1px solid white;
+    border: 1px solid transparent;
+    background-color: #28363F;
     text-align: left;
     padding: 25px 10px 25px 20px;
     color: white;
@@ -263,6 +266,7 @@ img{
 
 .project-button:hover{
     background-color: #28363F;
+    border: 1px solid white ;
 }
 
 /* SITE CONTACT */
@@ -350,125 +354,3 @@ footer .left-side ul li:hover{
 .mobile-menu-links{
     display: none;
 } 
-
-@media only screen and (max-width: 728px){
-    /*MOBILE HEADER*/
-    .site-header{
-        height: auto;
-    }
-    .site-header section{
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        padding: 50px 0px 0px 0px;
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-        text-align: left;
-    }
-    .site-header section .right-side{
-        width: 80vw;
-        height: auto;
-        padding: 120px 0px 50px 0px;
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    .site-header section .left-side{
-        padding: 0;
-        margin: 0;
-        height: auto;
-        width: 80vw;
-    }
-    .menu{
-        display: none;
-    }
-    .mobile-menu{
-        text-align: right;
-        line-height: 80px;
-        padding-right: 100px;
-        font-size: 2.2rem;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center
-    }
-    .mobile-menu:hover{
-        cursor: pointer;
-    }
-    .mobile-menu-links{
-        width: 100%;
-        background-color: #28363F;
-        position: absolute;
-        z-index: 100;
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .mobile-menu-links a{
-        padding: 8px;
-        font-size: 1.4rem;
-        color: white;
-    }
-    .mobile-menu-links a:hover{
-        color: #F58066;
-        cursor: pointer;
-    }
-
-    .site-header section .left-side img{
-        padding: 0px 0px 100px 0px;
-        width: 100%;
-    }
-
-    /*MOBILE ABOUT*/
-    .site-about{
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .site-about .left-side{
-        width: 80vw;
-        padding: 70px 0px 0px 0px;
-    }
-    .site-about .right-side{
-        width: 80vw;
-    }
-    .site-about .right-side img{
-        padding: 50px 0px 100px 0px;
-        width: 100%;
-    }
-
-    .site-portfolio{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
-    }
-    .site-portfolio .right-side,
-    .site-portfolio .left-side{
-        width: 80vw;
-    }
-    .site-portfolio .left-side img{
-        padding: 50px 0px 50px 0px;
-        width: 100%;
-    }
-
-    .site-contact{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-    }
-    .site-contact .left-side, .site-contact .right-side{
-        width: 80vw;
-    }
-    .site-contact .right-side img{
-        padding: 50px 0px 100px 0px;
-        width: 90%;
-    }
-}
