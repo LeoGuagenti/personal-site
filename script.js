@@ -48,4 +48,4 @@ document.getElementById('l4').addEventListener("click", function(){window.locati
 document.getElementById('l5').addEventListener("click", function(){window.location = "https://github.com/LeoGuagenti", false});
 document.getElementById('l6').addEventListener("click", function(){window.location = "https://stackoverflow.com/users/10243971/leo-guagenti"});
 document.getElementById('l7').addEventListener("click", function(){window.location = "https://www.linkedin.com/in/leonardo-g-a98878115/"});
-document.getElementById('l8').addEventListener("click", function(){window.location = "mailto:lg424117@outlook.com"});
+document.getElementById('l8').addEventListener("click", function(){window.location = "mailto:lg424117@ohio.edu"});
